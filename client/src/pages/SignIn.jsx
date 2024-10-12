@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaUserShield } from "react-icons/fa";
 import { useDispatch,useSelector } from "react-redux";
 import { signInFailure,signInStart,signInSuccess } from "../redux/user/userSlice";
+import OAuth from "../components/OAuth";
 
 export default function SignIn() {
   const Navigate = useNavigate();
@@ -97,6 +98,7 @@ const dispatch =useDispatch();
                 "Sign In"
               )}
             </Button>
+            <OAuth/>
           </form>
           <div className="flex gap-2 text-sm mt-5 font-semibold">
             <span>Dont have an account?</span>

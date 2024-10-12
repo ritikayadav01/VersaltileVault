@@ -14,6 +14,10 @@ const userSchema = new mongoose.Schema({
         type:String,
         required:true,
     },
+    profilePicture:{
+        type:String,
+        default:"login.png",
+        }
 },{timestamps:true})
 
 const User1=mongoose.model('User1',userSchema);
